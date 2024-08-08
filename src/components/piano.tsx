@@ -5,7 +5,7 @@ export const Piano = () => (
   <div className="h-full w-full relative">
     <Badge
       icon={<Icons.sphere />}
-      title="Projects: Piano"
+      title="Piano"
       className="absolute top-1 left-1"
     />
     <img

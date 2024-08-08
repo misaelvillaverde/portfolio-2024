@@ -23,6 +23,7 @@ export default {
           DEFAULT: "oklch(var(--badge) / <alpha-value>)",
           foreground: "oklch(var(--badge-foreground) / <alpha-value>)",
         },
+        timeline: "oklch(var(--timeline) / <alpha-value>)",
       },
     },
   },

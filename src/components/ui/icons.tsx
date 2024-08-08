@@ -1,7 +1,3 @@
-import { HTMLAttributes } from "preact/compat";
-
-type IconProps = HTMLAttributes<SVGSVGElement>;
-
 export const Icons = {
   briefcase: () => (
     <svg

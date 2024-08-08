@@ -17,19 +17,25 @@ const exp = [
 ] as const;
 
 export const Experience = () => (
-  <div>
-    <Badge icon={<Icons.briefcase />} title="Experience" />
-    <div className="pt-4 h-full w-full relative">
-      <div className="absolute left-[0.32rem] top-2 h-[80%] border-[0.1rem] border-title"></div>
+  <div className="flex relative justify-center items-center w-full h-full">
+    <Badge
+      icon={<Icons.briefcase />}
+      title="Experience"
+      className="absolute top-1 left-1"
+    />
+    <div className="relative mt-8">
+      <div className="absolute left-[0.4rem] top-[-8px] h-full border-2 border-timeline"></div>
       <div>
         {exp.map((event, index) => (
           <div
             key={index}
-            className="flex items-center mb-3 last:mb-0 last:text-hampao"
+            className="flex items-center mb-6 last:mb-0 last:text-hampao"
           >
-            <div className="bg-title rounded-full p-[0.4rem]"></div>
-            <div className="ml-3">
-              <h3 className="text-xs font-medium text-title">{event.company}</h3>
+            <div className="bg-timeline rounded-full p-[0.52rem]"></div>
+            <div className="ml-4">
+              <h3 className="text-xs font-medium text-title">
+                {event.company}
+              </h3>
               <p className="text-[10px] text-gray-500">{event.year}</p>
             </div>
           </div>
