@@ -50,77 +50,75 @@
     .card {
         @apply bg-card rounded-lg shadow-lg p-2 border border-card-border;
     }
-
-    /* .max-image-h {
-        @apply max-h-[260px] sm:max-h-[210px] md:max-h-[160px];
-    } */
 }
 
-.card-grid {
-    display: grid;
-    grid:
-        "rumis" 1fr
-        "exp" 1fr
-        "spheres" 1fr
-        "piano" 1fr
-        "mongolerias" 1fr
-        "mongolerias" 1fr
-        "github" 1fr
-        / 1fr;
-    gap: 8px;
-}
-
-@media (min-width: 480px) {
+@layer components {
     .card-grid {
         display: grid;
         grid:
-            "rumis exp" 1fr
-            "github mongolerias" 1fr
-            "spheres mongolerias" 1fr
-            "piano piano" 1fr
-            / 1fr 1fr;
+            "rumis" 1fr
+            "exp" 1fr
+            "spheres" 1fr
+            "piano" 1fr
+            "mongolerias" 1fr
+            "mongolerias" 1fr
+            "github" 1fr
+            / 1fr;
         gap: 8px;
     }
-}
 
-@media (min-width: 640px) {
-    .card-grid {
-        display: grid;
-        grid:
-            "rumis exp mongolerias" 1fr
-            "github spheres mongolerias" 1fr
-            "piano piano ." 1fr
-            / 1fr 1fr 1fr;
-        gap: 8px;
+    @media (min-width: 480px) {
+        .card-grid {
+            display: grid;
+            grid:
+                "rumis exp" 1fr
+                "github mongolerias" 1fr
+                "spheres mongolerias" 1fr
+                "piano piano" 1fr
+                / 1fr 1fr;
+            gap: 8px;
+        }
     }
-}
 
-@media (min-width: 768px) {
-    .card-grid {
-        display: grid;
-        grid:
-            "rumis exp github mongolerias" 1fr
-            "piano piano spheres mongolerias" 1fr
-            / 1fr 1fr 1fr 1fr;
-        gap: 8px;
+    @media (min-width: 640px) {
+        .card-grid {
+            display: grid;
+            grid:
+                "rumis exp mongolerias" 1fr
+                "github spheres mongolerias" 1fr
+                "piano piano ." 1fr
+                / 1fr 1fr 1fr;
+            gap: 8px;
+        }
     }
-}
 
-.rumis {
-    grid-area: rumis;
-}
-.exp {
-    grid-area: exp;
-}
-.github {
-    grid-area: github;
-}
-.mongolerias {
-    grid-area: mongolerias;
-}
-.piano {
-    grid-area: piano;
-}
-.spheres {
-    grid-area: spheres;
+    @media (min-width: 768px) {
+        .card-grid {
+            display: grid;
+            grid:
+                "rumis exp github mongolerias" 1fr
+                "piano piano spheres mongolerias" 1fr
+                / 1fr 1fr 1fr 1fr;
+            gap: 8px;
+        }
+    }
+
+    .rumis {
+        grid-area: rumis;
+    }
+    .exp {
+        grid-area: exp;
+    }
+    .github {
+        grid-area: github;
+    }
+    .mongolerias {
+        grid-area: mongolerias;
+    }
+    .piano {
+        grid-area: piano;
+    }
+    .spheres {
+        grid-area: spheres;
+    }
 }

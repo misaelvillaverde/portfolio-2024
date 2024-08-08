@@ -21,7 +21,7 @@ export const Experience = () => (
     <Badge
       icon={<Icons.briefcase />}
       title="Experience"
-      className="absolute top-1 left-1"
+      className="absolute top-1 left-1 z-10"
     />
     <div className="relative mt-8">
       <div className="absolute top-[-8px] left-[-0.3px] h-full border-2 border-hampao"></div>

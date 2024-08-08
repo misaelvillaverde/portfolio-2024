@@ -1,4 +1,5 @@
 import { Experience } from "./components/experience";
+import { Github } from "./components/github";
 import { Mongolerias } from "./components/mongolerias";
 import { Piano } from "./components/piano";
 import { Rumis } from "./components/rumis";
@@ -14,9 +15,16 @@ export function App() {
       />
 
       <h1 className="text-3xl font-medium text-title my-4">
-        Hello I’m Misael — Building Software at{" "}
-        <span className="text-hampao">BabyHampao</span>.{" "}
-        <span className="text-prevjob">Previously at Omniscape.</span>
+        Hello, I’m Misael — Building Software at{" "}
+        <span className="text-hampao">
+          BabyHampao{" "}
+          <img
+            src="/images/bao.gif"
+            alt="bao animation"
+            className="inline w-9"
+          />
+        </span>
+        . <span className="text-prevjob">Previously at Omniscape.</span>
       </h1>
       <p className="text-subtitle max-w-screen-sm">
         I am a full-stack software engineer that loves to solve real life
@@ -32,7 +40,15 @@ export function App() {
         <div className="card exp">
           <Experience />
         </div>
-        <div className="card github"></div>
+        <div className="card github">
+          <a
+            href="https://github.com/misaelvillaverde"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Github />
+          </a>
+        </div>
         <div className="card mongolerias">
           <a
             href="https://github.com/misaelvillaverde/mongolerias-calculator-pro"
