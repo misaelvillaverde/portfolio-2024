@@ -24,14 +24,14 @@ export const Experience = () => (
       className="absolute top-1 left-1"
     />
     <div className="relative mt-8">
-      <div className="absolute left-[0.4rem] top-[-8px] h-full border-2 border-timeline"></div>
+      <div className="absolute top-[-8px] left-[-0.3px] h-full border-2 border-hampao"></div>
       <div>
         {exp.map((event, index) => (
           <div
             key={index}
             className="flex items-center mb-6 last:mb-0 last:text-hampao"
           >
-            <div className="bg-timeline rounded-full p-[0.52rem]"></div>
+            <div className="bg-hampao ml-[-0.4rem] rounded-full p-[0.5rem]"></div>
             <div className="ml-4">
               <h3 className="text-xs font-medium text-title">
                 {event.company}
