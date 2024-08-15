@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "deploy": "bun run build && wrangler pages deploy dist --project-name portfolio",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -18,6 +19,7 @@
     "postcss": "^8.4.41",
     "tailwindcss": "^3.4.7",
     "typescript": "^5.2.2",
-    "vite": "^5.3.4"
+    "vite": "^5.3.4",
+    "wrangler": "^3.71.0"
   }
 }
