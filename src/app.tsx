@@ -17,7 +17,7 @@ export function App() {
       <h1 className="text-3xl font-medium text-title my-4">
         Hello, I’m Misael — Building Software at{" "}
         <span className="text-hampao">
-          BabyHampao{" "}
+          Maíz Studio{" "}
           <img
             src="/images/bao.gif"
             alt="bao animation"

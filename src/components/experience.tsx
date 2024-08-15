@@ -11,7 +11,7 @@ const exp = [
     year: 2021,
   },
   {
-    company: "BabyHampao",
+    company: "Maíz Studio",
     year: 2024,
   },
 ] as const;
