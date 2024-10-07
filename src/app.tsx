@@ -16,14 +16,18 @@ export function App() {
 
       <h1 className="text-3xl font-medium text-title my-4">
         Hello, I’m Misael — Building Software at{" "}
-        <span className="text-hampao">
-          Maíz Studio{" "}
+        <a
+          href="https://maiz.studio?ref=misael-website"
+          target="_blank"
+          className="text-hampao"
+        >
+          Maíz Studio
           <img
-            src="/images/bao.gif"
-            alt="bao animation"
-            className="inline w-9"
+            src="/images/corn.webp"
+            alt="corn animation"
+            className="inline w-9 -rotate-45"
           />
-        </span>
+        </a>
         . <span className="text-prevjob">Previously at Omniscape.</span>
       </h1>
       <p className="text-subtitle max-w-screen-sm">
